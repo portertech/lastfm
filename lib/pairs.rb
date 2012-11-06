@@ -29,7 +29,7 @@ class LastFMPairs
           @permutations << "quit"
           break
         end
-        permutations = line.split(",").permutation(2).map {|pair| pair.sort}.uniq
+        permutations = line.split(",").permutation(2).map {|pair| pair.sort }.uniq
         permutations.each do |pair|
           @permutations << pair.join(",")
         end
